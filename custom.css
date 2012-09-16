@@ -30,7 +30,7 @@ Author URL:		http://ideaboxcreations.com/
 /* teasers */
 .custom .teaser { width: 100%; margin-bottom: 2em; padding-top: 2em; border-top: 1px solid #eee;}
 .custom .teasers_box { padding-top: 0; padding-bottom:0; border-top: 0;}
-.custom .teaser h2 a {font-weight:bold;}
+.custom .teaser h2 {font-size:3em;}
 .custom .teaser .format_teaser { line-height: 1.6em;}
 
 /* content area */
@@ -38,7 +38,7 @@ Author URL:		http://ideaboxcreations.com/
 .home-class #content_area {background:#fff;}
 
 /* single posts and archives */
-.custom .headline_area h1, .custom .headline_area h2, .custom #archive_intro h1 {font-weight:bold;}
+.custom .headline_area h1, .custom .headline_area h2, .custom #archive_intro h1 {font-size:3.5em;}
 .custom .format_text {line-height:1.7em;}
 
 /* sidebar */
