@@ -44,10 +44,10 @@ function biz_skin_register_required_plugins() {
 
 		// This is an example of how to include a plugin pre-packaged with a theme
 		array(
-			'name'     				=> 'Soliloquy', // The plugin name
-			'slug'     				=> 'soliloquy', // The plugin slug (typically the folder name)
-			'source'   				=> 'http://demo.icustomizethesis.com/wp-content/themes/thesis_185/custom-3/tgmpa/plugins/soliloquy.zip', // The plugin source
-			'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
+			'name'     				=> 'Easing Slider', // The plugin name
+			'slug'     				=> 'easing-slider', // The plugin slug (typically the folder name)
+			'source'   				=> 'http://downloads.wordpress.org/plugin/easing-slider.1.2.zip', // The plugin source
+			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
 			'version' 				=> '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins

@@ -50,14 +50,19 @@ function featured_headline() {
 add_action('thesis_hook_before_content_area','featured_headline');
 
 /* register sidebars for featured box headline */
-register_sidebar(array('name'=>'Home Slider', 'before_title'=>'<h3>', 'after_title'=>'</h3>','description'=>'Drag Soliloquy widget here to display slider on home page'));
+register_sidebar(array('name'=>'Home Slider', 'before_title'=>'<h3>', 'after_title'=>'</h3>','description'=>'Drag a widget here to replace slider on home page'));
 
 function ict_custom_slider() { 
 if(is_front_page()) { ?>
 <div class="full_width" id="slider_area">
 <div class="page">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Home Slider') ) : ?>
-	<?php endif; ?>
+	<?php 
+	if ( is_active_sidebar('Home Slider') ) { 
+		dynamic_sidebar('Home Slider') ;
+	}
+	else {
+			if (function_exists("easing_slider")){ easing_slider(); }
+	} ?>
 </div>
 </div>
 <?php }
